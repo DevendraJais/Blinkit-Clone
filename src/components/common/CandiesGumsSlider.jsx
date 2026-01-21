@@ -169,12 +169,12 @@ const CandiesGumsSlider = () => {
               WebkitScrollbar: 'none'
             }}>
               {products.map((product) => (
-                <div key={product.id} width="200" className="ProductTypeCard__UpdatedProductTypeCardWrapper-sc-1ly7yxv-0 gWtUBI flex-shrink-0 h-full" style={{
+                <div key={product.id} width="200" className="ProductTypeCard__UpdatedProductTypeCardWrapper-sc-1ly7yxv-0 gWtUBI flex-shrink-0 h-full w-40 sm:w-48 md:w-56 lg:w-48 xl:w-56" style={{
                   border: '1px solid rgb(229, 231, 235)',
                   borderRadius: '8px',
                   overflow: 'hidden',
                   maxWidth: '200px',
-                  minWidth: '200px'
+                  minWidth: '160px'
                 }}>
                   <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col relative">
                     {/* Offer Badge */}
