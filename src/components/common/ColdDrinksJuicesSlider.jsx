@@ -1,81 +1,141 @@
 import React from 'react';
 
-const ProductSlider = ({ title }) => {
+const ColdDrinksJuicesSlider = () => {
   const products = [
     {
       id: 1,
-      name: "The Cinnamon Kitchen Cacao, Almond & Berry Rocks Dark Chocolate",
-      variant: "50 g",
-      price: "₹189",
-      originalPrice: "₹210",
-      discount: "10% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/8f8a93dc-db44-498f-9fae-81ab0ff658da.png",
+      name: "Booster Alkaline Water - Pack of 4",
+      variant: "4 x 500 ml",
+      price: "₹278",
+      originalPrice: "₹360",
+      discount: "22% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/aec9ed27-738e-4655-b281-ebeea63c86ad.png",
       hasOffer: true
     },
     {
       id: 2,
-      name: "Cremeitalia Cream Cheese",
-      variant: "200 g",
-      price: "₹289",
-      originalPrice: "₹310",
-      discount: "6% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/bb9464ff-8ffb-4a8d-8306-cf78a2f85c80.png",
+      name: "Liquid IV Hydration Multiplier Lemon Lime Electrolyte Drink Mix",
+      variant: "12 pcs",
+      price: "₹1140",
+      originalPrice: "₹1280",
+      discount: "10% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/08267df3-b660-48f2-96c2-0feac04b88ec.png",
       hasOffer: true
     },
     {
       id: 3,
-      name: "The Cinnamon Kitchen Sugar-Free Cacao & Berry Rocks Dark Chocolate",
-      variant: "50 g",
-      price: "₹259",
-      originalPrice: "₹285",
-      discount: "9% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/076a5684-8206-48cc-b730-e1c7fe05e5df.png",
-      hasOffer: true
+      name: "Monin Mojito Mint Syrup",
+      variant: "250 ml",
+      price: "₹425",
+      originalPrice: null,
+      discount: null,
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/0a7d0307-db38-457a-ac69-03a1a9167d9f.png",
+      hasOffer: false
     },
     {
       id: 4,
-      name: "Kraft Parmesan Grated Cheese",
-      variant: "85 g",
-      price: "₹649",
+      name: "Organic India Premium Speciality Tulsi Tea Green Tea Gift Pack",
+      variant: "60 pcs",
+      price: "₹699",
       originalPrice: null,
       discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3c202ae1-62b7-4789-8876-4800783351b5.png",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e0d1ce35-755c-4c40-8c95-ec805d582e2b.png",
       hasOffer: false
     },
     {
       id: 5,
-      name: "Old Hill Parmesan Cheese Block",
-      variant: "200 g",
-      price: "₹555",
+      name: "Monin Curacao Bleu Syrup",
+      variant: "250 ml",
+      price: "₹425",
       originalPrice: null,
       discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/cbe0c21d-907e-434b-a815-725fd2869789.png",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/c3e97e39-1061-499c-aeac-8b46a8063758.png",
       hasOffer: false
     },
     {
       id: 6,
-      name: "The Baker's Dozen Rich Chocolate Pound Cake",
-      variant: "150 g",
-      price: "₹163",
-      originalPrice: null,
-      discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3160c376-c07e-441c-afb8-195eb51a1cc4.png",
-      hasOffer: false
+      name: "Phab 10g Double Chocolate Protein Milkshake",
+      variant: "200 ml",
+      price: "₹75",
+      originalPrice: "₹85",
+      discount: "11% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3e1924ac-6f24-436a-9b63-b085238c9f66.png",
+      hasOffer: true
     },
     {
       id: 7,
-      name: "The Baker's Dozen High Protein Peanut Butter Cookies",
-      variant: "150 g",
-      price: "₹185",
+      name: "Star Signature Premium Sparkling Drink",
+      variant: "6 x 300 ml",
+      price: "₹290",
+      originalPrice: "₹360",
+      discount: "19% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/aec9ed27-738e-4655-b281-ebeea63c86ad.png",
+      hasOffer: true
+    },
+    {
+      id: 8,
+      name: "Only Earth Tender Coconut Water",
+      variant: "165 ml",
+      price: "₹45",
       originalPrice: null,
       discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b0f2413b-4082-4703-8de5-94cead0d21ff.png",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/0a7d0307-db38-457a-ac69-03a1a9167d9f.png",
       hasOffer: false
+    },
+    {
+      id: 9,
+      name: "Phab 10g Protein Kulfi Caramel Protein Milkshake",
+      variant: "200 ml",
+      price: "₹75",
+      originalPrice: "₹85",
+      discount: "11% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3e1924ac-6f24-436a-9b63-b085238c9f66.png",
+      hasOffer: true
+    },
+    {
+      id: 10,
+      name: "Wellwith Sea Buckthorn Fruit Pulp",
+      variant: "300 ml",
+      price: "₹699",
+      originalPrice: "₹849",
+      discount: "17% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/08267df3-b660-48f2-96c2-0feac04b88ec.png",
+      hasOffer: true
+    },
+    {
+      id: 11,
+      name: "Booster Black Alkaline Water - Pack of 4",
+      variant: "4 x 500 ml",
+      price: "₹381",
+      originalPrice: "₹440",
+      discount: "13% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/aec9ed27-738e-4655-b281-ebeea63c86ad.png",
+      hasOffer: true
+    },
+    {
+      id: 12,
+      name: "Phab 18g Protein Protein Milkshake - Classic Chocolate (No Added Sugar)",
+      variant: "200 ml",
+      price: "₹99",
+      originalPrice: "₹125",
+      discount: "20% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3e1924ac-6f24-436a-9b63-b085238c9f66.png",
+      hasOffer: true
+    },
+    {
+      id: 13,
+      name: "Phab 18g Protein Cold Coffee Protein Milkshake (No Added Sugar)",
+      variant: "200 ml",
+      price: "₹99",
+      originalPrice: "₹125",
+      discount: "20% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3e1924ac-6f24-436a-9b63-b085238c9f66.png",
+      hasOffer: true
     }
   ];
 
   return (
-    <div className="widgets__Container-sc-1aj45no-0 hkfraU">
+    <div className="widgets__Container-sc-1aj45no-0 hkfraU mt-8">
       <div type="77" className="widgets__WidgetContainer-sc-1aj45no-1 gAPTRP">
         <div className="SliderProductHeader__Container-sc-1akjuw0-0 keHQWU">
           <div className="SliderProductHeader__HeaderStripContainer-sc-1akjuw0-1 foXrGE flex items-center justify-between">
@@ -90,7 +150,7 @@ const ProductSlider = ({ title }) => {
                   lineHeight: '32px'
                 }}
               >
-                {title}
+                Cold Drinks & Juices
               </div>
             </div>
             <div className="SliderProductHeader__TextButtonContainer-sc-1akjuw0-2 kzVNbK">
@@ -116,7 +176,19 @@ const ProductSlider = ({ title }) => {
                   maxWidth: '200px',
                   minWidth: '200px'
                 }}>
-                  <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col">
+                  <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col relative">
+                    {/* Offer Badge */}
+                    {product.hasOffer && (
+                      <div className="Product__UpdatedOfferContainer-sc-11dk8zk-1 hMsdbb absolute top-2 left-2 z-10">
+                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M28.9499 0C28.3999 0 27.9361 1.44696 27.9361 2.60412V27.9718L24.5708 25.9718L21.2055 27.9718L17.8402 25.9718L14.4749 27.9718L11.1096 25.9718L7.74436 27.9718L4.37907 25.9718L1.01378 27.9718V2.6037C1.01378 1.44655 0.549931 0 0 0H28.9499Z" fill="#538CEE"></path>
+                        </svg>
+                        <div className="Product__UpdatedOfferTitle-sc-11dk8zk-2 jYYtXR absolute top-1 left-1 text-white text-xs font-bold">
+                          {product.discount}
+                        </div>
+                      </div>
+                    )}
+                    
                     {/* Product Image */}
                     <div className="Product__UpdatedImageContainer-sc-11dk8zk-3 cVXeYd flex justify-center items-center p-4">
                       <div className="Product__UpdatedImage-sc-11dk8zk-4 kBYCan">
@@ -192,7 +264,7 @@ const ProductSlider = ({ title }) => {
                               fontSize: '9px',
                               color: 'rgb(54, 54, 54)'
                             }}>
-                              10 mins
+                              8 mins
                             </div>
                           </div>
                         </div>
@@ -222,6 +294,23 @@ const ProductSlider = ({ title }) => {
                             marginBottom: '8px'
                           }}>
                             {product.name}
+                          </div>
+                          <div style={{
+                            alignItems: 'center',
+                            display: 'flex',
+                            height: '26px',
+                            width: '100%'
+                          }}>
+                            <span className="bff_variant_text_only plp-product__quantity--box" style={{
+                              height: '13px',
+                              display: '-webkit-box',
+                              WebkitLineClamp: '1',
+                              WebkitBoxOrient: 'vertical',
+                              fontSize: '12px',
+                              color: 'rgb(75, 85, 99)'
+                            }}>
+                              {product.variant}
+                            </span>
                           </div>
                         </div>
                         
@@ -295,4 +384,4 @@ const ProductSlider = ({ title }) => {
   );
 };
 
-export default ProductSlider;
+export default ColdDrinksJuicesSlider;

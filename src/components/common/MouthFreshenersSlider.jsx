@@ -1,81 +1,161 @@
 import React from 'react';
 
-const ProductSlider = ({ title }) => {
+const MouthFreshenersSlider = () => {
   const products = [
     {
       id: 1,
-      name: "The Cinnamon Kitchen Cacao, Almond & Berry Rocks Dark Chocolate",
-      variant: "50 g",
-      price: "₹189",
-      originalPrice: "₹210",
-      discount: "10% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/8f8a93dc-db44-498f-9fae-81ab0ff658da.png",
-      hasOffer: true
+      name: "Praakritik Natural Paan Gulkand",
+      variant: "250 g",
+      price: "₹339",
+      originalPrice: null,
+      discount: null,
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/77b55f78-2b66-4cd6-a9bf-b0e95210b17c.png",
+      hasOffer: false
     },
     {
       id: 2,
-      name: "Cremeitalia Cream Cheese",
+      name: "SURILI Calcutta Meetha Pan with Rose Mukhvas Mouth Freshener",
       variant: "200 g",
-      price: "₹289",
-      originalPrice: "₹310",
-      discount: "6% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/bb9464ff-8ffb-4a8d-8306-cf78a2f85c80.png",
+      price: "₹234",
+      originalPrice: "₹360",
+      discount: "35% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/6e295473-6bfd-4ad6-b0e3-ffd993167ec9.png",
       hasOffer: true
     },
     {
       id: 3,
-      name: "The Cinnamon Kitchen Sugar-Free Cacao & Berry Rocks Dark Chocolate",
-      variant: "50 g",
-      price: "₹259",
-      originalPrice: "₹285",
-      discount: "9% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/076a5684-8206-48cc-b730-e1c7fe05e5df.png",
+      name: "Swad Digestive Candy & Mukhwas Mouth Freshener",
+      variant: "4 pcs",
+      price: "₹499",
+      originalPrice: "₹647",
+      discount: "22% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/de4653e3-2dd6-4348-a999-67d5027e9be2.png",
       hasOffer: true
     },
     {
       id: 4,
-      name: "Kraft Parmesan Grated Cheese",
-      variant: "85 g",
-      price: "₹649",
-      originalPrice: null,
-      discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3c202ae1-62b7-4789-8876-4800783351b5.png",
-      hasOffer: false
+      name: "Swad Paan Mouth Freshener Combo",
+      variant: "100 g",
+      price: "₹499",
+      originalPrice: "₹697",
+      discount: "28% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/441768ed-0389-4cab-b33c-82eb47758281.png",
+      hasOffer: true
     },
     {
       id: 5,
-      name: "Old Hill Parmesan Cheese Block",
+      name: "Nature Vit Imli Gatagat Candy",
       variant: "200 g",
-      price: "₹555",
-      originalPrice: null,
-      discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/cbe0c21d-907e-434b-a815-725fd2869789.png",
-      hasOffer: false
+      price: "₹179",
+      originalPrice: "₹300",
+      discount: "40% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3012e904-0a55-47bf-82fd-ac90de32d211.png",
+      hasOffer: true
     },
     {
       id: 6,
-      name: "The Baker's Dozen Rich Chocolate Pound Cake",
-      variant: "150 g",
-      price: "₹163",
-      originalPrice: null,
-      discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3160c376-c07e-441c-afb8-195eb51a1cc4.png",
-      hasOffer: false
+      name: "Dizzle Aplam Chaplam Candy",
+      variant: "170 g",
+      price: "₹145",
+      originalPrice: "₹170",
+      discount: "14% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e55cbfe9-bd3f-427a-b9d3-35854d47cb82.png",
+      hasOffer: true
     },
     {
       id: 7,
-      name: "The Baker's Dozen High Protein Peanut Butter Cookies",
-      variant: "150 g",
-      price: "₹185",
+      name: "Nature Vit Mango Slice Churan Mouth Freshener",
+      variant: "200 g",
+      price: "₹179",
+      originalPrice: "₹300",
+      discount: "40% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3012e904-0a55-47bf-82fd-ac90de32d211.png",
+      hasOffer: true
+    },
+    {
+      id: 8,
+      name: "Dizzle Calcutta Pan Paan",
+      variant: "130 g",
+      price: "₹130",
+      originalPrice: "₹170",
+      discount: "23% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e55cbfe9-bd3f-427a-b9d3-35854d47cb82.png",
+      hasOffer: true
+    },
+    {
+      id: 9,
+      name: "Nature Vit Dried Sweet Amla Candy",
+      variant: "200 g",
+      price: "₹179",
+      originalPrice: "₹300",
+      discount: "40% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3012e904-0a55-47bf-82fd-ac90de32d211.png",
+      hasOffer: true
+    },
+    {
+      id: 10,
+      name: "7 Bazaari Banarasi Paan (Belgian Chocolate)",
+      variant: "10 pcs",
+      price: "₹299",
+      originalPrice: "₹349",
+      discount: "14% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/6e295473-6bfd-4ad6-b0e3-ffd993167ec9.png",
+      hasOffer: true
+    },
+    {
+      id: 11,
+      name: "Mr. Merchant Calcutta Paan",
+      variant: "300 g",
+      price: "₹265",
       originalPrice: null,
       discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b0f2413b-4082-4703-8de5-94cead0d21ff.png",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/77b55f78-2b66-4cd6-a9bf-b0e95210b17c.png",
       hasOffer: false
+    },
+    {
+      id: 12,
+      name: "Bullion Amla Candy",
+      variant: "200 g",
+      price: "₹115",
+      originalPrice: "₹160",
+      discount: "28% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/de4653e3-2dd6-4348-a999-67d5027e9be2.png",
+      hasOffer: true
+    },
+    {
+      id: 13,
+      name: "Mr. Merchant Sweet Amla Candy",
+      variant: "300 g",
+      price: "₹289",
+      originalPrice: "₹300",
+      discount: "4% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/441768ed-0389-4cab-b33c-82eb47758281.png",
+      hasOffer: true
+    },
+    {
+      id: 14,
+      name: "Nature Vit Madrasi Saunf Mouth Freshener",
+      variant: "200 g",
+      price: "₹179",
+      originalPrice: "₹300",
+      discount: "40% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3012e904-0a55-47bf-82fd-ac90de32d211.png",
+      hasOffer: true
+    },
+    {
+      id: 15,
+      name: "Earthen Story Organic Gulkand",
+      variant: "500 g",
+      price: "₹525",
+      originalPrice: "₹650",
+      discount: "19% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/77b55f78-2b66-4cd6-a9bf-b0e95210b17c.png",
+      hasOffer: true
     }
   ];
 
   return (
-    <div className="widgets__Container-sc-1aj45no-0 hkfraU">
+    <div className="widgets__Container-sc-1aj45no-0 hkfraU mt-8">
       <div type="77" className="widgets__WidgetContainer-sc-1aj45no-1 gAPTRP">
         <div className="SliderProductHeader__Container-sc-1akjuw0-0 keHQWU">
           <div className="SliderProductHeader__HeaderStripContainer-sc-1akjuw0-1 foXrGE flex items-center justify-between">
@@ -90,7 +170,7 @@ const ProductSlider = ({ title }) => {
                   lineHeight: '32px'
                 }}
               >
-                {title}
+                Mouth fresheners
               </div>
             </div>
             <div className="SliderProductHeader__TextButtonContainer-sc-1akjuw0-2 kzVNbK">
@@ -116,7 +196,19 @@ const ProductSlider = ({ title }) => {
                   maxWidth: '200px',
                   minWidth: '200px'
                 }}>
-                  <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col">
+                  <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col relative">
+                    {/* Offer Badge */}
+                    {product.hasOffer && (
+                      <div className="Product__UpdatedOfferContainer-sc-11dk8zk-1 hMsdbb absolute top-2 left-2 z-10">
+                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M28.9499 0C28.3999 0 27.9361 1.44696 27.9361 2.60412V27.9718L24.5708 25.9718L21.2055 27.9718L17.8402 25.9718L14.4749 27.9718L11.1096 25.9718L7.74436 27.9718L4.37907 25.9718L1.01378 27.9718V2.6037C1.01378 1.44655 0.549931 0 0 0H28.9499Z" fill="#538CEE"></path>
+                        </svg>
+                        <div className="Product__UpdatedOfferTitle-sc-11dk8zk-2 jYYtXR absolute top-1 left-1 text-white text-xs font-bold">
+                          {product.discount}
+                        </div>
+                      </div>
+                    )}
+                    
                     {/* Product Image */}
                     <div className="Product__UpdatedImageContainer-sc-11dk8zk-3 cVXeYd flex justify-center items-center p-4">
                       <div className="Product__UpdatedImage-sc-11dk8zk-4 kBYCan">
@@ -192,7 +284,7 @@ const ProductSlider = ({ title }) => {
                               fontSize: '9px',
                               color: 'rgb(54, 54, 54)'
                             }}>
-                              10 mins
+                              8 mins
                             </div>
                           </div>
                         </div>
@@ -222,6 +314,23 @@ const ProductSlider = ({ title }) => {
                             marginBottom: '8px'
                           }}>
                             {product.name}
+                          </div>
+                          <div style={{
+                            alignItems: 'center',
+                            display: 'flex',
+                            height: '26px',
+                            width: '100%'
+                          }}>
+                            <span className="bff_variant_text_only plp-product__quantity--box" style={{
+                              height: '13px',
+                              display: '-webkit-box',
+                              WebkitLineClamp: '1',
+                              WebkitBoxOrient: 'vertical',
+                              fontSize: '12px',
+                              color: 'rgb(75, 85, 99)'
+                            }}>
+                              {product.variant}
+                            </span>
                           </div>
                         </div>
                         
@@ -295,4 +404,4 @@ const ProductSlider = ({ title }) => {
   );
 };
 
-export default ProductSlider;
+export default MouthFreshenersSlider;

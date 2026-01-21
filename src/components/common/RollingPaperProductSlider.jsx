@@ -133,13 +133,18 @@ const RollingPaperProductSlider = () => {
         
         <div className="SliderProductList__Wrapper-sc-14wck6y-0 evMhyw">
           <div className="SliderProductList__Container-sc-14wck6y-1 fQqwxr">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-5 md:gap-6 px-2 sm:px-4 md:px-6 lg:px-8 pt-4 sm:pt-6">
+            <div className="flex overflow-x-auto scrollbar-hide gap-4 px-4 sm:px-6 lg:px-8 pt-4 pb-6" style={{
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+              WebkitScrollbar: 'none'
+            }}>
               {products.map((product) => (
-                <div key={product.id} width="200" className="ProductTypeCard__UpdatedProductTypeCardWrapper-sc-1ly7yxv-0 gWtUBI justify-self-center h-full" style={{
+                <div key={product.id} width="200" className="ProductTypeCard__UpdatedProductTypeCardWrapper-sc-1ly7yxv-0 gWtUBI flex-shrink-0 h-full" style={{
                   border: '1px solid rgb(229, 231, 235)',
                   borderRadius: '8px',
                   overflow: 'hidden',
-                  maxWidth: '200px'
+                  maxWidth: '200px',
+                  minWidth: '200px'
                 }}>
                   <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col">
                     {/* Product Image */}

@@ -1,81 +1,141 @@
 import React from 'react';
 
-const ProductSlider = ({ title }) => {
+const CandiesGumsSlider = () => {
   const products = [
     {
       id: 1,
-      name: "The Cinnamon Kitchen Cacao, Almond & Berry Rocks Dark Chocolate",
-      variant: "50 g",
-      price: "₹189",
-      originalPrice: "₹210",
-      discount: "10% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/8f8a93dc-db44-498f-9fae-81ab0ff658da.png",
-      hasOffer: true
+      name: "Haribo Starmix Candy With Fruit Juice",
+      variant: "140 g",
+      price: "₹260",
+      originalPrice: null,
+      discount: null,
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e067603b-5bda-4971-a67f-0c17e97998d3.png",
+      hasOffer: false
     },
     {
       id: 2,
-      name: "Cremeitalia Cream Cheese",
-      variant: "200 g",
-      price: "₹289",
-      originalPrice: "₹310",
-      discount: "6% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/bb9464ff-8ffb-4a8d-8306-cf78a2f85c80.png",
-      hasOffer: true
+      name: "Swad Mixed Fruit Candy",
+      variant: "2 x 50 pcs",
+      price: "₹200",
+      originalPrice: null,
+      discount: null,
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/d8054f9a-05f8-4047-91f6-e96f6af723ed.png",
+      hasOffer: false
     },
     {
       id: 3,
-      name: "The Cinnamon Kitchen Sugar-Free Cacao & Berry Rocks Dark Chocolate",
-      variant: "50 g",
-      price: "₹259",
-      originalPrice: "₹285",
-      discount: "9% OFF",
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/076a5684-8206-48cc-b730-e1c7fe05e5df.png",
-      hasOffer: true
+      name: "Gud Gum Natural Sugar Free Chewing Gum",
+      variant: "4 x 21 g",
+      price: "₹352",
+      originalPrice: null,
+      discount: null,
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/2f20e102-ef13-44ec-bb5c-4294760a7bbf.png",
+      hasOffer: false
     },
     {
       id: 4,
-      name: "Kraft Parmesan Grated Cheese",
-      variant: "85 g",
-      price: "₹649",
-      originalPrice: null,
-      discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3c202ae1-62b7-4789-8876-4800783351b5.png",
-      hasOffer: false
+      name: "Nature Vit Aam Papad/ Mango Candy",
+      variant: "300 g",
+      price: "₹250",
+      originalPrice: "₹500",
+      discount: "50% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/f2745605-9e89-42b0-8e27-0c95ac5c244d.png",
+      hasOffer: true
     },
     {
       id: 5,
-      name: "Old Hill Parmesan Cheese Block",
+      name: "Nature Vit Paan Flavour Candy",
       variant: "200 g",
-      price: "₹555",
-      originalPrice: null,
-      discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/cbe0c21d-907e-434b-a815-725fd2869789.png",
-      hasOffer: false
+      price: "₹179",
+      originalPrice: "₹300",
+      discount: "40% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/c0ca4a61-71cd-442e-b925-fcac53cba139.png",
+      hasOffer: true
     },
     {
       id: 6,
-      name: "The Baker's Dozen Rich Chocolate Pound Cake",
-      variant: "150 g",
-      price: "₹163",
-      originalPrice: null,
-      discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3160c376-c07e-441c-afb8-195eb51a1cc4.png",
-      hasOffer: false
+      name: "Nature Vit Mix Fruit Candy",
+      variant: "200 g",
+      price: "₹150",
+      originalPrice: "₹300",
+      discount: "50% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/fb0b7d13-b69d-49c3-8895-fe90ca878c1e.png",
+      hasOffer: true
     },
     {
       id: 7,
-      name: "The Baker's Dozen High Protein Peanut Butter Cookies",
-      variant: "150 g",
-      price: "₹185",
-      originalPrice: null,
-      discount: null,
-      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b0f2413b-4082-4703-8de5-94cead0d21ff.png",
-      hasOffer: false
+      name: "Yuvika Dried Indian Gooseberry",
+      variant: "100 g",
+      price: "₹169",
+      originalPrice: "₹299",
+      discount: "43% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/bff21d08-ad7d-45e7-9f56-4796db7f771d.png",
+      hasOffer: true
+    },
+    {
+      id: 8,
+      name: "Dry Fruit Hub Aam Papad Mango Slice",
+      variant: "400 g",
+      price: "₹249",
+      originalPrice: "₹450",
+      discount: "44% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/4fc0acc6-5d29-4cb5-8a09-ab80c9df3045.png",
+      hasOffer: true
+    },
+    {
+      id: 9,
+      name: "Chaska Bite Aam Chaska Mango Candy",
+      variant: "250 g",
+      price: "₹195",
+      originalPrice: "₹300",
+      discount: "35% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/96d19257-23dc-46fb-93a4-cac1e3612b5b.png",
+      hasOffer: true
+    },
+    {
+      id: 10,
+      name: "Swad Aam Papad Candy",
+      variant: "400 g",
+      price: "₹449",
+      originalPrice: "₹599",
+      discount: "25% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3111e367-8856-4509-900f-8c80cdf77114.png",
+      hasOffer: true
+    },
+    {
+      id: 11,
+      name: "Swad Digestive Candy Jar",
+      variant: "200 pcs",
+      price: "₹399",
+      originalPrice: "₹400",
+      discount: "0% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/1d9d2910-6212-45a9-948c-5c81a79ec877.png",
+      hasOffer: true
+    },
+    {
+      id: 12,
+      name: "Swad Mixed Fruit Flavours Candies",
+      variant: "200 pcs",
+      price: "₹399",
+      originalPrice: "₹400",
+      discount: "0% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/d8054f9a-05f8-4047-91f6-e96f6af723ed.png",
+      hasOffer: true
+    },
+    {
+      id: 13,
+      name: "Nature Vit Khatti Mithi Orange Candy",
+      variant: "200 g",
+      price: "₹179",
+      originalPrice: "₹300",
+      discount: "40% OFF",
+      image: "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/fb0b7d13-b69d-49c3-8895-fe90ca878c1e.png",
+      hasOffer: true
     }
   ];
 
   return (
-    <div className="widgets__Container-sc-1aj45no-0 hkfraU">
+    <div className="widgets__Container-sc-1aj45no-0 hkfraU mt-8">
       <div type="77" className="widgets__WidgetContainer-sc-1aj45no-1 gAPTRP">
         <div className="SliderProductHeader__Container-sc-1akjuw0-0 keHQWU">
           <div className="SliderProductHeader__HeaderStripContainer-sc-1akjuw0-1 foXrGE flex items-center justify-between">
@@ -90,7 +150,7 @@ const ProductSlider = ({ title }) => {
                   lineHeight: '32px'
                 }}
               >
-                {title}
+                Candies & Gums
               </div>
             </div>
             <div className="SliderProductHeader__TextButtonContainer-sc-1akjuw0-2 kzVNbK">
@@ -116,7 +176,19 @@ const ProductSlider = ({ title }) => {
                   maxWidth: '200px',
                   minWidth: '200px'
                 }}>
-                  <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col">
+                  <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col relative">
+                    {/* Offer Badge */}
+                    {product.hasOffer && (
+                      <div className="Product__UpdatedOfferContainer-sc-11dk8zk-1 hMsdbb absolute top-2 left-2 z-10">
+                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M28.9499 0C28.3999 0 27.9361 1.44696 27.9361 2.60412V27.9718L24.5708 25.9718L21.2055 27.9718L17.8402 25.9718L14.4749 27.9718L11.1096 25.9718L7.74436 27.9718L4.37907 25.9718L1.01378 27.9718V2.6037C1.01378 1.44655 0.549931 0 0 0H28.9499Z" fill="#538CEE"></path>
+                        </svg>
+                        <div className="Product__UpdatedOfferTitle-sc-11dk8zk-2 jYYtXR absolute top-1 left-1 text-white text-xs font-bold">
+                          {product.discount}
+                        </div>
+                      </div>
+                    )}
+                    
                     {/* Product Image */}
                     <div className="Product__UpdatedImageContainer-sc-11dk8zk-3 cVXeYd flex justify-center items-center p-4">
                       <div className="Product__UpdatedImage-sc-11dk8zk-4 kBYCan">
@@ -192,7 +264,7 @@ const ProductSlider = ({ title }) => {
                               fontSize: '9px',
                               color: 'rgb(54, 54, 54)'
                             }}>
-                              10 mins
+                              8 mins
                             </div>
                           </div>
                         </div>
@@ -222,6 +294,23 @@ const ProductSlider = ({ title }) => {
                             marginBottom: '8px'
                           }}>
                             {product.name}
+                          </div>
+                          <div style={{
+                            alignItems: 'center',
+                            display: 'flex',
+                            height: '26px',
+                            width: '100%'
+                          }}>
+                            <span className="bff_variant_text_only plp-product__quantity--box" style={{
+                              height: '13px',
+                              display: '-webkit-box',
+                              WebkitLineClamp: '1',
+                              WebkitBoxOrient: 'vertical',
+                              fontSize: '12px',
+                              color: 'rgb(75, 85, 99)'
+                            }}>
+                              {product.variant}
+                            </span>
                           </div>
                         </div>
                         
@@ -295,4 +384,4 @@ const ProductSlider = ({ title }) => {
   );
 };
 
-export default ProductSlider;
+export default CandiesGumsSlider;

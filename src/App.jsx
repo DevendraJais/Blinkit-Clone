@@ -5,6 +5,12 @@ import SaleCouponList from './components/common/SaleCouponList';
 import CategoryGrid from './components/common/CategoryGrid';
 import ProductSlider from './components/common/ProductSlider';
 import RollingPaperProductSlider from './components/common/RollingPaperProductSlider';
+import SnacksMunchiesSlider from './components/common/SnacksMunchiesSlider';
+import HookahProductSlider from './components/common/HookahProductSlider';
+import MouthFreshenersSlider from './components/common/MouthFreshenersSlider';
+import ColdDrinksJuicesSlider from './components/common/ColdDrinksJuicesSlider';
+import CandiesGumsSlider from './components/common/CandiesGumsSlider';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
@@ -24,7 +30,25 @@ function App() {
         
         {/* Rolling Paper & Tobacco Section */}
         <RollingPaperProductSlider />
+        
+        {/* Snacks & Munchies Section */}
+        <SnacksMunchiesSlider />
+        
+        {/* Hookah Section */}
+        <HookahProductSlider />
+        
+        {/* Mouth Fresheners Section */}
+        <MouthFreshenersSlider />
+        
+        {/* Cold Drinks & Juices Section */}
+        <ColdDrinksJuicesSlider />
+        
+        {/* Candies & Gums Section */}
+        <CandiesGumsSlider />
       </main>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
