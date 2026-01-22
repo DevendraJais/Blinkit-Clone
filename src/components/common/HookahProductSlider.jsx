@@ -104,7 +104,9 @@ const HookahProductSlider = () => {
                   borderRadius: '8px',
                   overflow: 'hidden',
                   maxWidth: '200px',
-                  minWidth: '160px'
+                  minWidth: '160px',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04)',
+                  transform: 'translateZ(0) perspective(1000px)'
                 }}>
                   <div className="Product__UpdatedPlpProductContainer-sc-11dk8zk-0 jHQiaC h-full flex flex-col relative">
                     {/* Offer Badge */}
