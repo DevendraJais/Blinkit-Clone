@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import PromotionalBanner from './components/common/PromotionalBanner';
 import SaleCouponList from './components/common/SaleCouponList';
@@ -11,19 +12,22 @@ import MouthFreshenersSlider from './components/common/MouthFreshenersSlider';
 import ColdDrinksJuicesSlider from './components/common/ColdDrinksJuicesSlider';
 import CandiesGumsSlider from './components/common/CandiesGumsSlider';
 import Footer from './components/layout/Footer';
+import FruitVegetablePage from './pages/FruitVegetablePage';
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <main className="pt-16 sm:pt-18 md:pt-20">
-        <PromotionalBanner />
-        
-        {/* Sale Coupon List - Multiple promotional banners */}
-        <SaleCouponList />
+      <Routes>
+        <Route path="/" element={
+          <main className="pt-16 sm:pt-18 md:pt-20">
+            <PromotionalBanner />
+            
+            {/* Sale Coupon List - Multiple promotional banners */}
+            <SaleCouponList />
 
-        {/* Category Grid - All categories like Blinkit */}
-        <CategoryGrid />
+            {/* Category Grid - All categories like Blinkit */}
+            <CategoryGrid />
 
         {/* Product Slider - Dairy, Bread & Eggs */}
         <ProductSlider title="Dairy, Bread & Eggs" />
@@ -45,7 +49,10 @@ function App() {
         
         {/* Candies & Gums Section */}
         <CandiesGumsSlider />
-      </main>
+          </main>
+        } />
+        <Route path="/fruits-vegetables" element={<FruitVegetablePage />} />
+      </Routes>
       
       {/* Footer */}
       <Footer />

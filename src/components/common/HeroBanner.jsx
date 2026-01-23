@@ -1,7 +1,14 @@
 import React from 'react';
-import { ArrowRight, Clock, Truck } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Clock, Truck } from 'lucide-react';
 
 const HeroBanner = () => {
+  const navigate = useNavigate();
+
+  const handleBannerClick = () => {
+    navigate('/fruits-vegetables');
+  };
+
   return (
     <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
@@ -19,9 +26,8 @@ const HeroBanner = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-              <button className="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-2">
+              <button className="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200">
                 <span>Order Now</span>
-                <ArrowRight className="h-5 w-5" />
               </button>
               <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors duration-200">
                 View Menu
@@ -60,13 +66,22 @@ const HeroBanner = () => {
             </div>
           </div>
 
-          {/* Right Content - Image/Illustration */}
+          {/* Right Content - FNV Banner Image */}
           <div className="relative order-first lg:order-last">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl lg:rounded-2xl p-4 lg:p-8">
+            <div 
+              className="cursor-pointer hover:opacity-95 transition-opacity duration-200"
+              onClick={handleBannerClick}
+            >
               <img 
-                src="https://via.placeholder.com/500x400/ffffff/ef4444?text=Delivery+Illustration"
-                alt="Grocery Delivery"
-                className="rounded-lg w-full h-auto"
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2026-01/Frame-1437256605-2-2.jpg"
+                alt="FNV Banner"
+                className="rounded-lg w-full h-auto object-cover"
+                style={{
+                  borderRadius: '0px',
+                  objectFit: 'cover',
+                  maxWidth: '100%',
+                  display: 'block'
+                }}
               />
             </div>
             
