@@ -1032,9 +1032,9 @@ const FruitVegetableCategorySection = () => {
       {/* Products Grid - Responsive for all devices */}
       <div id="plpContainer" className="BffPlpFeedContainer__ItemsContainer-sc-12wcdtn-2 jkPwTA flex-1" style={{ overflowY: 'scroll' }}>
         <div className="BffPlpFeedContainer__BlurredContainer-sc-12wcdtn-8 hZbapl">
-          <div className="grid grid-cols-2 max-[405px]:grid-cols-1 max-[405px]:justify-center max-[405px]:items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-1 p-1 max-[405px]:gap-0.5 max-[405px]:p-0.5 max-[405px]:flex max-[405px]:flex-col max-[405px]:items-center">
+          <div className="grid grid-cols-2 max-[405px]:flex max-[405px]:flex-col max-[405px]:items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-1 p-1 max-[405px]:gap-2 max-[405px]:p-2">
             {currentProducts.map((product) => (
-              <div key={product.id} data-pf="reset" style={{ width: '100%', maxWidth: '300px' }} className="max-[405px]:mx-auto">
+              <div key={product.id} data-pf="reset" style={{ width: '100%', maxWidth: '300px' }} className="max-[405px]:w-full max-[405px]:flex max-[405px]:justify-center">
                 <FruitVegetableProductCard product={product} />
               </div>
             ))}
