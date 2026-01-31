@@ -1,6 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const CategoryGrid = () => {
+  const navigate = useNavigate();
+
+  const handleCategoryClick = (categoryId, alt) => {
+    console.log('Category clicked:', categoryId, alt);
+    // Navigate to Pharma & Wellness page when category 16 is clicked
+    if (categoryId === 16) {
+      console.log('Navigating to sexual-wellness');
+      navigate('/sexual-wellness');
+    }
+  };
   const categories = [
     {
       id: 1,
@@ -160,6 +171,7 @@ const CategoryGrid = () => {
                     maxWidth: '128px',
                     width: '100%'
                   }}
+                  onClick={() => handleCategoryClick(category.id, category.alt)}
                 >
                   <img 
                     src={category.image}

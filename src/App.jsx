@@ -13,6 +13,7 @@ import ColdDrinksJuicesSlider from './components/common/ColdDrinksJuicesSlider';
 import CandiesGumsSlider from './components/common/CandiesGumsSlider';
 import Footer from './components/layout/Footer';
 import FruitVegetablePage from './pages/FruitVegetablePage';
+import PharmacyPage from './pages/PharmacyPage';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           </main>
         } />
         <Route path="/fruits-vegetables" element={<FruitVegetablePage />} />
+        <Route path="/pharmacy" element={<PharmacyPage />} />
       </Routes>
       
       {/* Footer */}

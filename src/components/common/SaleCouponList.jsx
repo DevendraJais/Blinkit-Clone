@@ -1,6 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SaleCouponList = () => {
+  const navigate = useNavigate();
+
+  const handleBannerClick = (alt) => {
+    console.log('Banner clicked:', alt);
+    // Navigate to pharmacy page when masthead_web_pharma is clicked
+    if (alt === 'masthead_web_pharma') {
+      console.log('Navigating to pharmacy');
+      navigate('/pharmacy');
+    }
+  };
   const saleCoupons = [
     {
       id: 1,
@@ -30,6 +41,7 @@ const SaleCouponList = () => {
             <div 
               key={coupon.id}
               className="cursor-pointer"
+              onClick={() => handleBannerClick(coupon.alt)}
             >
               <div className="relative overflow-hidden rounded-xl lg:rounded-2xl">
                 <img 
@@ -40,7 +52,7 @@ const SaleCouponList = () => {
                     borderRadius: '16px',
                     objectFit: 'cover',
                     maxWidth: '100%'
-                  }}
+                  }}n
                   loading="lazy"
                 />
               </div>
